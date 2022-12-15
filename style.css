@@ -1,0 +1,36 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #00cad1;
+    padding: 5px 10px;
+
+}
+
+.header-conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 60px;
+    display: block;
+}
+
+.header-menu-lista {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header-menu-lista a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+}
