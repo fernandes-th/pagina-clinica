@@ -1,36 +1,269 @@
+/* Estilos gerais */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.header {
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-conteudo {
+    max-width: 612px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-conteudo h2, .container-conteudo h3 {
+    margin: 0;
+}
+
+/* Início CSS Topo */
+
+.topo {
     background-color: #00cad1;
-    padding: 5px 10px;
-
+    width: 100%;
 }
 
-.header-conteudo {
+.topo .container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.topo-titulo {
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.header-logo img {
-    height: 60px;
-    display: block;
-}
-
-.header-menu-lista {
-    list-style-type: none;
+.topo-titulo a {
     display: flex;
-    gap: 15px;
 }
 
-.header-menu-lista a {
+.topo-logo {
+    height: 60px;
+}
+
+.topo-links {
+    display: flex;
+}
+
+.topo-links a {
+    padding: 10px;
     text-decoration: none;
-    color: aliceblue;
+    color: #fff;
     font-weight: 600;
 }
+
+.topo-links a:hover {
+    color: #004b4c;
+}
+
+/* Fim do CSS Topo */
+
+/* Início CSS Rodapé */
+
+footer {
+    background-color: #0d6e71;
+    color: #fff;
+    padding: 20px;
+}
+
+footer .container {
+    text-align: center;
+}
+
+/* Fim do CSS Rodapé */
+
+#sobre,
+#especialidades,
+#contato {
+    padding: 40px 20px 0;
+}
+
+.box-visao-geral {
+    position: relative;
+    background-image: url('img/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.box-visao-geral-titulo {
+    height: 100%;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.box-visao-geral h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin: 0;
+}
+
+.box-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-sobre h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.box-sobre img {
+    height: 250px;
+}
+
+.box-especialidades {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-especialidade {
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 30%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+
+.box-especialidade img {
+    width: 100%;
+}
+
+.box-especialidade figcaption {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.box-links-horarios {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-horarios {
+    background-color: #00cad1;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 425px) {
+    .topo .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .topo-titulo {
+        width: 100%;
+        border-bottom: 1px solid #17acae;
+    }
+    .topo-logo {
+        height: 80px;
+    }   
+    .topo-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .box-visao-geral {
+        height: 200px;
+    }
+    
+    .box-visao-geral h1 {
+        font-size: 24px;
+    }
+    
+    .box-sobre img {
+        display: none;
+    }
+
+    .box-sobre h3 {
+        text-align: center;
+    }
+
+    .box-especialidades {
+        flex-direction: column;
+    }
+    
+    .box-especialidade {
+        margin: 20px;
+        width:calc(100% - 40px);
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .box-visao-geral {
+        height: 300px;
+    }
+
+    .box-visao-geral h1 {
+        font-size: 28px;
+    }
+
+    .box-sobre img {
+        display: none;
+    }
+
+    .box-especialidades {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box-especialidade {
+        width: calc(100% / 2 - 40px);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .box-visao-geral {
+        height: 400px;
+    }
+
+    .box-visao-geral h1 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .box-visao-geral {
+        height: 500px;
+    }
+
+    .box-visao-geral h1 {
+        font-size: 38px;
+    }
+}
+
+
+
+
