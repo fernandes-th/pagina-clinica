@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-navegacao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.menu-navegacao-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 35px;
+    font-size: 20px;
+}
+
+.menu-navegacao-links a {
+    text-decoration: none;
+    color: #0000008c;
+    font-weight: 600;
+    border-bottom: 2px solid #00cad1;
+}
+
+.menu-navegacao-links a:hover {
+    color: #00cad1;
+}
+
+.menu-titulo {
+    text-align: center;
+}
+
+.especialidades {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.especialidades-box {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.box-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.box-intro h2 {
+    font-size: 20px;
+}
+
+.box-horarios {
+    display: grid;
+    grid-template-columns: auto 2fr;
+}
+
+.box-horarios img {
+    height: 200px;
+}
+
+table {
+    height: 200px;
+}
+
+thead {
+    text-align: left;
+    color: #fff;
+}
+
+th,td {
+    padding: 8px 14px;
+}
+
+th {
+    background-color: #00cad1;
+}
+
+tr:nth-of-type(odd) {
+    background-color: lightgrey;
+}
+
+tr:nth-last-of-type(even) {
+    background-color: rgb(250, 252, 252);
+}
+
+
